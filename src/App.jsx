@@ -23,7 +23,7 @@ export default function App() {
 
     try {
       const response = await fetch(
-        "/webhook/universal-lead-intake",
+        import.meta.env.VITE_WEBHOOK_URL,
         {
           method: "POST",
           headers: {
